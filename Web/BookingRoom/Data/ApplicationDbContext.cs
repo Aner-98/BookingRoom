@@ -17,5 +17,11 @@ namespace BookingRoom.Data
 			IOptions<OperationalStoreOptions> operationalStoreOptions) : base(options, operationalStoreOptions)
 		{
 		}
+
+		public DbSet<Room> Rooms { get; set; }
+		public DbSet<Ivent> Ivents { get; set; }
+		public DbSet<IventReport> Reports { get; set; }
+		public DbSet<IventType> IvenTypes { get; set; }
+		public DbSet<Booking> Bookings { get; set; }
 	}
 }
